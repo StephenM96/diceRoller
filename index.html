@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ultimate Dice Roll</title>
-    <link rel="stylesheet" href="/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="./dice.js"></script>
+  </head>
+  <body>
     <header>
-        <h1>
-            Ultimate Dice Roller
-        </h1>    
+      <h1>Ultimate Dice Roller</h1>
     </header>
 
     <nav>
-        <p>Users Instructions: Click a button to roll.</p>
+      <p>Users Instructions: Click a button to roll.</p>
     </nav>
 
     <article>
-        <img src="./images/d6 png.png" alt="d6_dice_image" width="200px">
-        <button class="button" id="d6">Roll a d6</button>
+      <img src="./images/d6 png.png" alt="d6_dice_image" width="200px" />
+      <button class="button" id="d6" onClick="diceRoll(1,6, 'roll6')">Roll a d6</button>
+      <h6 id="roll6"></h6>
+      <img src="./images/d8.png" alt="d8_dice_image" width="200px" />
+      <button class="button" id="d6" onClick="diceRoll(1,8, 'roll8')">Roll a d8</button>
+      <h6 id="roll8"></h6>
     </article>
 
     <footer>
-        <p>&copy COPYRIGHT INFO</p>
+      <p>&copy COPYRIGHT INFO</p>
     </footer>
-</body>
+  </body>
 </html>
